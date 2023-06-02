@@ -1,0 +1,69 @@
+﻿<div class="top-row navbar navbar-dark">
+    <div class="container-fluid">
+        <a target="_blank" href="https://www.linkedin.com/in/eduardo-salazar-3a92791bb/">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a target="_blank" href="https://github.com/EduardoSalazar252">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a target="_blank" href="https://codepen.io/Eduardo-Salazar-the-reactor">
+            <i class="fab fa-codepen fa-2x" aria-hidden="true"></i>
+
+        </a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+  
+
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Section_1")' Match="NavLinkMatch.All">
+                <i class="fa fa-user-circle fa-lg" style="margin-right:10px;" aria-hidden="true"></i>About
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Section_2")'>
+                <i class="fa fa-code fa-lg" style="margin-right:10px;" aria-hidden="true"></i> Skills
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Section_3")'>
+                <i class="fa fa-briefcase fa-lg" style="margin-right:10px;" aria-hidden="true"></i> Experience
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Section_3")'>
+                <i class="fa fa-th fa-lg" style="margin-right:10px;" aria-hidden="true"></i> Projects
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Section_4")'>
+                <i class="fa fa-file-code fa-lg" style="margin-right:10px;" aria-hidden="true"></i> Services
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Section_5")'>
+                <i class="fa fa-comment fa-lg" style="margin-right:10px;" aria-hidden="true"></i> Contact
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+    private async Task RedirectionClicked(string _sectionID)
+    {
+        await JS.InvokeVoidAsync("scrollToComponent", _sectionID);
+    }
+}
