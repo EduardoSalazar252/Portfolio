@@ -1,0 +1,14 @@
+﻿/* FOOTER DIV */
+footer {
+    background: #000;
+}
+
+.footer-container-fluid {
+    padding-bottom: 0.5%;
+    text-align: center;
+    padding-top: 0.5%;
+}
+    .footer-container-fluid a {
+        margin: 0 2%;
+        color: white;       
+    }    
