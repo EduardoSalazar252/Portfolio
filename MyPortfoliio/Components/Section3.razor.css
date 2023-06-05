@@ -5,6 +5,7 @@
 .main-timeline {
     overflow: hidden;
     position: relative;
+    margin-bottom: 2%;
 }
 
     .main-timeline .timeline {
