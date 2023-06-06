@@ -1,0 +1,73 @@
+﻿::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+:root {
+    --main-color-rgb: rgb(79, 112, 156);
+    --main-color-rgba: rgb(79, 112, 156,0.5);
+    --main-color-border-bottom: 2px solid rgb(79, 112, 156);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color-rgb);
+    border: 0px solid var(--main-color-rgb);
+    border-radius: 0px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--main-color-rgb);
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: var(--main-color-rgb);
+    }
+
+::-webkit-scrollbar-track {
+    background: var(--main-color-rgb);
+    border: 5px solid #dedede;
+    border-radius: 0px;
+}
+
+    ::-webkit-scrollbar-track:hover {
+        background: var(--main-color-rgb);
+    }
+
+    ::-webkit-scrollbar-track:active {
+        background: var(--main-color-rgb);
+    }
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+/* ---------------------------------------------------------------------*/
+#skill {
+    overflow: hidden;
+    background-color: #010101;
+    /* background-color: #111*/
+}
+
+.portfolio-about-me {
+    background-color: #f9f9f9;
+}
+
+    .portfolio-about-me h1 {
+        padding: 15px;
+        background-color: #262626;
+        border-left: 10px solid #525252;
+        color: #DADADA;
+        -webkit-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+        font-size: 26px;
+        font-family: 'Raleway', Arial, sans-serif;
+    }
+
+        .portfolio-about-me h1 :hover {
+            border-left: 5px solid #525252;
+        }

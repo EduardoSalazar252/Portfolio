@@ -1,5 +1,44 @@
 ﻿<div class="skill" id="skill">
     <div class="portfolio-about-me">
-        <h1 style="font-family: Lucida Calligraphy;">Contact</h1>
+        <h1 style="font-family: Lucida Calligraphy;">Contact me</h1>
+    </div>
+
+    <!-- Start Contact Me -->
+    <div id="contact" class="row contact">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <form method="POST" role="form" action="http://formspree.io/">
+                <input type="hidden" name="_next" value="//site.io/thanks.html" />
+                <input type="hidden" name="_subject" value="New submission!" />
+                <input type="text" name="_gotcha" style="display:none" />
+
+                <div class="form-group">
+                    <label for="InputName">Your Name</label>
+                    <input type="text" class="form-control" name="name" id="InputName" placeholder="Enter Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="InputEmail">Your Email</label>
+
+                    <input type="email" class="form-control" id="InputEmail" name="_replyto" placeholder="Enter Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="InputMessage">Message</label>
+
+                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                </div>
+
+                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+            </form>
+        </div>
+
+        <div class="col-md-4 spacer">
+            If you are interested on my profile and you need to get in touch, please feel free to  contact me using the contact form or the info below.
+            <div class="row text-center spacer">
+                <p class="paragrph">
+                    <strong>Email:</strong> e.salazar.v.252@gmail.com <br>
+                    <strong>Phone:</strong> +58 424 135-55-01
+                </p>
+            </div>
+        </div>
     </div>
 </div>
