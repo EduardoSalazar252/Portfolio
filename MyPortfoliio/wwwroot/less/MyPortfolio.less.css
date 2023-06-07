@@ -64,8 +64,8 @@
         color: #DADADA;
         -webkit-transition: all 0.35s ease-in-out;
         transition: all 0.35s ease-in-out;
-        font-size: 26px;
-        font-family: 'Raleway', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
     }
 
         .portfolio-about-me h1 :hover {
