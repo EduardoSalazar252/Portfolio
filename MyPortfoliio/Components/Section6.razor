@@ -1,10 +1,10 @@
-﻿<div class="skill" id="skill">
+﻿<div class="skill" id="skill" style="margin-top: 2%;">
     <div class="portfolio-about-me">
         <h1>Contact me</h1>
     </div>
 
     <!-- Start Contact Me -->
-    <div id="contact" class="row contact">
+@*    <div id="contact" class="row contact">
         <div class="col-md-2"></div>
         <div class="col-md-4">
             <form method="POST" role="form" action="http://formspree.io/">
@@ -40,5 +40,32 @@
                 </p>
             </div>
         </div>
+    </div>*@
+
+    <div id="contact">
+            <div class="skills-sub-title" style="margin-top: 2%;">
+                <h1>Get in Touch:</h1>
+            </div>
+         @*   <div class="section-title center">
+                <h2>Get in Touch</h2>
+                <div class="line">
+                </div>
+            </div>*@
+            <div class="gap"></div>
+            <div class="address" style="margin-top: 2%; text-align: center;">
+                Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be a part of your visions. Email me with any questions or inquiries. I'll happy to answer your questions and set up a meeting with you.
+            </div>
+            <div id="contact-form">
+                <div id="message"></div>
+                <form method="post" action="php/contact.php" name="contactform" id="contactform">
+                    <input name="name" type="text" id="name" class="inputForm2" placeholder="Name">
+                    <input name="email" type="text" id="email" placeholder="Email">
+                    <textarea name="comments" id="comments" placeholder="Message"></textarea>
+                    <input type="submit" class="send_message transition" id="submit" value="Send Message" />
+                </form>
+            </div>
+
+        
+
     </div>
 </div>

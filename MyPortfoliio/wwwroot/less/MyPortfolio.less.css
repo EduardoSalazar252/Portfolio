@@ -1,4 +1,13 @@
-﻿::-webkit-scrollbar {
+﻿body, html {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #fff;
+    overflow-x: hidden;
+    background: #000;
+    font-size:16px;
+}
+::-webkit-scrollbar {
     width: 6px;
     height: 6px;
 }
@@ -71,3 +80,7 @@
         .portfolio-about-me h1 :hover {
             border-left: 5px solid #525252;
         }
+
+.mtb-2 {
+    margin-bottom: 2%;
+}

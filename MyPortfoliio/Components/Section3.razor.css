@@ -5,7 +5,6 @@
 .main-timeline {
     overflow: hidden;
     position: relative;
-    margin-bottom: 2%;
 }
 
     .main-timeline .timeline {
@@ -93,7 +92,7 @@
 
     .main-timeline .description {
         font-size: 16px;
-        color: #fff;
+        color: #7F8289;
         line-height: 24px;
         margin: 0;
     }
@@ -112,7 +111,7 @@
             padding: 12px 25px 12px 25px;
             background: #f4a24c;
             border-radius: 0 50px 50px 0;
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bold;
             line-height: 36px;
             color: #fff;

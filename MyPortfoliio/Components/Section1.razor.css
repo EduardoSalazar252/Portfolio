@@ -1,6 +1,6 @@
 ﻿.top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
+/*    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;*/
     justify-content: flex-end;
     height: 100vh;
     display: block;
@@ -45,9 +45,9 @@
 
     .bottom-left {
         width: 100%;
-        height: 46%;
+        height: 80%;
         padding: 3%;
-        top: 20%;
+        top: 7%;
         background-color: rgba(0,0,0,0.7);
     }
 
@@ -67,7 +67,7 @@
 @media (min-width: 1244px) {   
     .bottom-left {
         width: 59%;
-        height: 60%;
+        height: 72%;
     }
 
         .bottom-left h1 {
@@ -82,9 +82,21 @@
             font-size: 1.1rem;
         }
 
-    .top-row {
+/*    .top-row {
         position: sticky;
         top: 0;
         z-index: 1;
-    }
+    }*/
+}
+.pict {
+    margin: 1% auto;
+    width: 11em;
+    height: 11em;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background: url('img/Usuario.png');
+    background-size: cover;
+    background-position: bottom;
+    border: 1px solid #fff;
+    box-sizing: border-box;
 }
