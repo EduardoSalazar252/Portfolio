@@ -1,8 +1,8 @@
 ﻿
-/*.know-more-skills {
-    margin-right: 20px;
-    margin-bottom: 12px;
-}*/
+.Section_2-subcontainer {
+    margin-top: 2%;
+    width: 100%;
+}
 
 .skills-left .logo-grid > ul {
     display: flex;
@@ -146,41 +146,7 @@ img {
 
 
 
-.skills-sub-title {
-    background-color: #262626;
-    color: #fff;
-    position: relative;
-    display: block;
-    height: 36px;
-   /* font-family: 'Raleway', Arial, sans-serif;*/
-}
-    .skills-sub-title h1 {
-        font-size: 20px;
-        padding-left: 4%;
-        font-style: italic;
-        line-height: 1.7;
-        color: #DADADA;
-    }
-    .skills-sub-title h2 {
-        padding: 4px;
-        font-size: 20px;
-    }
 
-
-    .skills-sub-title::after {
-        content: '';
-        height: 36px;
-        width: 36px;
-        background-color: #525252;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: auto;
-        transform: skewX(45deg);
-        transform-origin: top;
-        -webkit-transform: skewX(45deg);
-        -webkit-transform-origin: 0 0;
-    }
 
 
 figure.doing {
@@ -281,7 +247,7 @@ figure.doing a {
     .wisa-li {
         width: 50% !important;
     }
-    .skills-sub-title {
+    .Sections-sub-titles {
         width: 72%;
     }
 }
@@ -301,7 +267,7 @@ figure.doing a {
     .wisa-li {
         width: 25% !important;
     }
-    .skills-sub-title {
+    .Sections-sub-titles {
         width: 55%;
     }
 }

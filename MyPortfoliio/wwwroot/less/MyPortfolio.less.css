@@ -56,31 +56,89 @@
 
 
 /* ---------------------------------------------------------------------*/
-#skill {
-    overflow: hidden;
-    background-color: #010101;
-    /* background-color: #111*/
+.mtb-2 {
+    margin-bottom: 2%;
 }
 
-.portfolio-about-me {
+.mtt-2 {
+    margin-top: 2%;
+}
+.wth-100{
+    width: 100%;
+}
+.flt-l {
+    float: left;
+}
+.pdt-1 {
+    padding-top: 1%;
+}
+#Section_0 {
+    overflow: hidden;
+    background-color: #010101;
+}
+
+.Sections-titles {
     background-color: #f9f9f9;
 }
 
-    .portfolio-about-me h1 {
+    .Sections-titles h1 {
         padding: 15px;
         background-color: #262626;
         border-left: 10px solid #525252;
-        color: #DADADA;
         -webkit-transition: all 0.35s ease-in-out;
         transition: all 0.35s ease-in-out;
         font-weight: bold;
         font-size: 30px;
     }
 
-        .portfolio-about-me h1 :hover {
-            border-left: 5px solid #525252;
-        }
-
-.mtb-2 {
-    margin-bottom: 2%;
+.Sections-sub-titles {
+    background-color: #262626;
+    color: #fff;
+    position: relative;
+    display: block;
+    height: 36px;
 }
+
+    .Sections-sub-titles h1 {
+        font-size: 20px;
+        padding-left: 4%;
+        font-style: italic;
+        line-height: 1.7;
+    }
+
+    .Sections-sub-titles h2 {
+        padding: 4px;
+        font-size: 20px;
+    }
+
+
+    .Sections-sub-titles::after {
+        content: '';
+        height: 36px;
+        width: 36px;
+        background-color: #525252;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+        transform: skewX(45deg);
+        transform-origin: top;
+        -webkit-transform: skewX(45deg);
+        -webkit-transform-origin: 0 0;
+    }
+
+@media (max-width: 763px) {
+    .Sections-sub-titles {
+        width: 72%;
+    }
+}
+
+@media (min-width: 764px) {
+
+    .Sections-sub-titles {
+        width: 55%;
+    }
+}
+
+
+
