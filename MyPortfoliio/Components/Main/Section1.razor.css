@@ -37,8 +37,8 @@
     background: url('img/Usuario.png');
     background-size: cover;
     background-position: bottom;
-    border: 1px solid #fff;
     box-sizing: border-box;
+    box-shadow: 1px 5px 15px #fff;
 }
 @media (max-width: 1243px) {
 

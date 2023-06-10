@@ -26,11 +26,52 @@
             </NavLink>
         </div>
 
-        <div class="nav-item px-3">
+      @*  <div class="nav-item px-3">
             <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Section_2")'>
                 <i class="fa fa-code fa-lg" style="margin-right:10px;" aria-hidden="true"></i> Skills
             </NavLink>           
+        </div>*@
+
+        <div class="nav-item px-3">
+            @*<NavLink class="nav-link dropdown-toggle" @onclick="()=>expandSubNav = !expandSubNav">*@
+            <NavLink class="nav-link dropdown-toggle" @onclick="test">
+                <i class="fa fa-code fa-lg" style="margin-right:10px;" aria-hidden="true"></i>  Skills
+            </NavLink>
+            @if (expandSubNav)
+            {
+                <div class="nav-item">
+                    <NavLink class="nav-link expand-menu" @onclick='async() => await RedirectionClicked("Subsection_1")'>
+                        <i class="fa fa-caret-right" style="margin-right:10px;font-size: 14px;" aria-hidden="true"></i> <i style="font-size: 12px;">What I do</i>
+                    </NavLink>
+                </div>
+                <div class="nav-item">
+                    <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Subsection_2")'>
+                        <i class="fa fa-caret-right" style="margin-right:10px;font-size: 14px;" aria-hidden="true"></i> <i style="font-size: 12px;">Web solution stack</i>
+                    </NavLink>
+                </div>
+                 <div class="nav-item">
+                    <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Subsection_3")'>
+                        <i class="fa fa-caret-right" style="margin-right:10px;font-size: 14px;" aria-hidden="true"></i> <i style="font-size: 12px;">Ide & Software Applications</i>
+                    </NavLink>
+                </div>
+                <div class="nav-item">
+                    <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Subsection_4")'>
+                        <i class="fa fa-caret-right" style="margin-right:10px;font-size: 14px;" aria-hidden="true"></i> <i style="font-size: 12px;">Web frameworks</i>
+                    </NavLink>
+                </div>
+                <div class="nav-item">
+                    <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Subsection_5")'>
+                        <i class="fa fa-caret-right" style="margin-right:10px;font-size: 14px;" aria-hidden="true"></i> <i style="font-size: 12px;">Programming languages</i>
+                    </NavLink>
+                </div>
+                <div class="nav-item">
+                    <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Subsection_6")'>
+                        <i class="fa fa-caret-right" style="margin-right:10px;" aria-hidden="true"></i> <i style="font-size: 12px;">Cloud computing services</i>
+                    </NavLink>
+                </div>
+            }
         </div>
+       
         <div class="nav-item px-3">
             <NavLink class="nav-link" @onclick='async() => await RedirectionClicked("Section_3")'>
                 <i class="fa fa-briefcase fa-lg" style="margin-right:10px;" aria-hidden="true"></i> Experience
@@ -58,6 +99,7 @@
 </div>
 
 @code {
+    private bool expandSubNav;
     private bool collapseNavMenu = true;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
@@ -69,5 +111,10 @@
     private async Task RedirectionClicked(string _sectionID)
     {
         await JS.InvokeVoidAsync("scrollToComponent", _sectionID);
+    }
+    private async void test()
+    {
+        expandSubNav = !expandSubNav;
+        await RedirectionClicked("Section_2");
     }
 }
