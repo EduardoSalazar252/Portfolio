@@ -26,7 +26,7 @@
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link dropdown-toggle" @onclick="test">
+            <NavLink class="nav-link dropdown-toggle" @onclick="RedirectionDropdown">
                 <i class="fa fa-code fa-lg" style="margin-right:10px;" aria-hidden="true"></i> Skills
             </NavLink>
             @if (expandSubNav)
@@ -104,7 +104,7 @@
     {
         await JS.InvokeVoidAsync("scrollToComponent", _sectionID);
     }
-    private async void test()
+    private async void RedirectionDropdown()
     {
         expandSubNav = !expandSubNav;
         await RedirectionClicked("Section_2");
