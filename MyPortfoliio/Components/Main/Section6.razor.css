@@ -1,91 +1,34 @@
-﻿
-/*.contact {*/
-/*    background-color: #0f0f0f;*/
-    /*padding-top: 50px;
-    padding-bottom: 50px;*/
-   /* font-family: 'Open Sans', sans-serif;*/
-    /*color: #fffffd;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.spacer {
-    padding-top: 30px;
-}
-
-.btn {
-    font-size: 13px;
-}*/
-
-/* Contact Section
-==============================*/
-#contact {
-  /*  padding-top: 45px;
-    padding-bottom: 0;
-    padding: 90px 0;*/
-}
-
-    #contact ::selection {
-        color: #7F8289;
-        border: 1px solid #26292E;
-    }
-
-    #contact ::-moz-selection { /* For Firefox */
-        color: #7F8289;
-        border: 1px solid #26292E;
-    }
-
-    #contact #contact-form {
-        max-width: 650px;
-        margin: 2% auto;
-        float: none;
-    }
-
-        #contact #contact-form input[type="text"], #contact #contact-form textarea {
-            color: #7F8289;
-            font-size: 12px;
-            padding: 15px 0;
-            width: 100%;
-            padding-left: 10px;
-            background: #26292E;
-            margin-bottom: 20px;
-            border: 0;
-            border: 1px solid #26292E;
-            position: relative;
-        }
-
-        #contact #contact-form input[type="submit"] {
-            float: none;
-            margin: 20px auto;
-        }
-
-    #contact .error_message {
-        color: red;
-    }
+﻿/*======================================================================================*/
+/*                                   Contact Section*/
+/*======================================================================================*/
 
 #contact-form {
     text-align: center !important;
-    max-width: 600px;
-    float: left;
+    max-width: 650px;
+    margin: 2% auto;
+    float: none;
 }
 
     #contact-form input[type="text"], #contact-form textarea {
         color: #7F8289;
-        font-size: 12px;
+        font-size: 16px;
         padding: 15px 0;
         width: 100%;
         padding-left: 10px;
-        background: none;
         background: rgba(255,255,255,0.2);
-        margin-bottom: 20px;
         position: relative;
         border: 1px solid #26292E
     }
 
-        #contact-form input[type=text]:focus, #contact-form textarea:focus, input[type=email]:focus {
+        #contact-form input[type="text"]:focus, #contact-form textarea:focus {
             color: #fff;
             outline: none;
         }
+
+#contact #contact-form button[type="submit"] {
+    float: none;
+    margin: 20px auto;
+}
 
     #contact-form textarea {
         height: 170px;
@@ -96,91 +39,3 @@
     display: block;
     color: #7F8289;
 }
-
-#contact-form input[type="submit"], .controls button {
-    background: none;
-    border: none;
-    border-radius: 0;
-    padding: 14px 20px;
-    line-height: 14px;
-    cursor: pointer;
-    font-size: 13px;
-    color: #fff;
-    -webkit-appearance: none;
-    float: right;
-    background: #26292E;
-}
-
-    #contact-form input[type="submit"]:hover, .controls button {
-        background: #DE5E60;
-    }
-
-.error_message {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 15px;
-    color: #fff;
-}
-
-#success_page h3 {
-    text-align: center;
-    font-size: 18px;
-}
-
-#success_page p {
-    color: #fff;
-    margin-top: 20px;
-    text-align: center;
-}
-
-#message fieldset {
-    border: none;
-    color: #fff;
-}
-
-#contact p, #contact #success_page p {
-    color: #666;
-    text-align: center;
-}
-
-#contact #message fieldset {
-    color: #fff;
-}
-
-/*.Sections-sub-titles {
-    background-color: #262626;
-    color: #fff;
-    position: relative;
-    display: block;
-    height: 36px;*/
-    /* font-family: 'Raleway', Arial, sans-serif;*/
-/*}
-
-    .Sections-sub-titles h1 {
-        font-size: 20px;
-        padding-left: 4%;
-        font-style: italic;
-        line-height: 1.7;*/
-       /* color: #DADADA;*/
-    /*}
-
-    .Sections-sub-titles h2 {
-        padding: 4px;
-        font-size: 20px;
-    }
-
-
-    .Sections-sub-titles::after {
-        content: '';
-        height: 36px;
-        width: 36px;
-        background-color: #525252;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: auto;
-        transform: skewX(45deg);
-        transform-origin: top;
-        -webkit-transform: skewX(45deg);
-        -webkit-transform-origin: 0 0;
-    }*/

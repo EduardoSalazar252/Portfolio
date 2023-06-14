@@ -1,0 +1,232 @@
+﻿<style>
+    /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+
+    /*All the styling goes here*/
+
+    img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%;
+    }
+
+    table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%;
+    }
+
+        table td {
+            font-family: sans-serif;
+            font-size: 14px;
+            vertical-align: top;
+        }
+
+    /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+    .body {
+        background-color: #f6f6f6;
+        width: 100%;
+    }
+
+    /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+    .container {
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: 580px;
+    }
+
+    /* This should also be a block element, so that it will fill 100% of the .container */
+    .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 580px;
+        padding: 10px;
+    }
+
+    /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+    .main {
+        background: #ffffff;
+        border-radius: 3px;
+        width: 100%;
+    }
+
+    .wrapper {
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .footer {
+        clear: both;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+            color: #999999;
+            font-size: 12px;
+            text-align: center;
+        }
+
+    /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+    p,
+    ul,
+    ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+        p li,
+        ul li,
+        ol li {
+            list-style-position: inside;
+            margin-left: 5px;
+        }
+
+    a {
+        color: #3498db;
+        text-decoration: underline;
+    }
+
+
+    /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+
+
+
+    /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+    @media only screen and (max-width: 620px) {
+        table.body h1 {
+            font-size: 28px !important;
+            margin-bottom: 10px !important;
+        }
+
+        table.body p,
+        table.body ul,
+        table.body ol,
+        table.body td,
+        table.body span,
+        table.body a {
+            font-size: 16px !important;
+        }
+
+        table.body .wrapper,
+        table.body .article {
+            padding: 10px !important;
+        }
+
+        table.body .content {
+            padding: 0 !important;
+        }
+
+        table.body .container {
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        table.body .main {
+            border-left-width: 0 !important;
+            border-radius: 0 !important;
+            border-right-width: 0 !important;
+        }
+
+        table.body .btn table {
+            width: 100% !important;
+        }
+
+        table.body .btn a {
+            width: 100% !important;
+        }
+
+        table.body .img-responsive {
+            height: auto !important;
+            max-width: 100% !important;
+            width: auto !important;
+        }
+    }
+</style>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="container">
+            <div class="content">
+                <table role="presentation" class="main">
+                    <tr>
+                        <td class="wrapper">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                <tr style="background-color: rgb(0,51,141);">
+                                    <td>
+                                        <h1 style="color:white; text-align:center">Nuevo contacto</h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br />
+                                        <p>Saludos,</p>
+                                        <br />
+                                        <br />
+                                        <p>Ha recibido un mensaje de: <b>($NombreUsuario$)</b>.</p>
+                                        <br />
+                                        <p>Email: <b>($EmailUsuario$)</b>.</p>
+                                        <br />
+                                        <p>El contenido es el siguiente: <b>($ContenidoEmail$)</b></p>
+                                    </td>
+                                </tr>
+                              
+                                <tr>
+                                    <td style="border-bottom:1px solid lightgray">
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center; text-justify:auto">
+                                        <br />
+                                        <p style="font-size: 12px">Gracias por su colaboración.</p>
+                                        <p style="font-size: 12px">Saludos cordiales.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div class="footer" style="background-color: #f6f6f6;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="content-block">
+                                <span class="apple-link">Este correo ha sido generado automaticamente por el sistema del portafolio</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+

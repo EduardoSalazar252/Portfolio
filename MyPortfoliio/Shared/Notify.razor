@@ -1,0 +1,14 @@
+﻿@inject NotifyService NotifyService
+@implements IDisposable
+
+<div class="cs-Notify @(_isVisible ? "cs-Notify-visible" : null) @_backgroundCssClass">
+    <p><span class="mif-@_iconCssClass" aria-hidden="true"></span>    @_heading @_message</p>
+</div>
+
+@code {
+    private string? _heading;
+    private string? _message;
+    private bool _isVisible;
+    private string? _backgroundCssClass;
+    private string? _iconCssClass;
+}

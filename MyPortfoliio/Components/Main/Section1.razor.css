@@ -34,7 +34,8 @@
     height: 11em;
     border-radius: 100%;
     background-repeat: no-repeat;
-    background: url('img/Usuario.png');
+    /*    background: url('img/Usuario.png');*/
+    background: url('img/EduardoSalazar.jpg');
     background-size: cover;
     background-position: bottom;
     box-sizing: border-box;
