@@ -1,0 +1,101 @@
+﻿@using MyPortfoliio.Services
+<div class="skill mtt-2" id="Section_0">
+
+    <div class="Sections-titles">
+        <h1>Contact me</h1>
+    </div>
+
+    <div>
+
+        <div class="Sections-sub-titles mtt-2">
+            <h1>Get in Touch:</h1>
+        </div>
+
+        <div class="address mtt-2" style="text-align: center;">
+            Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be a part of your visions.
+            Email me with any questions or inquiries. I'll happy to answer your questions and set up a meeting with you.
+        </div>
+
+        <div id="contact-form">
+            <div id="message"></div>
+           @* <form method="post" action="php/contact.php" name="contactform" id="contactform">
+                <input name="name" type="text" id="name" class="inputForm2" placeholder="Name">
+                <input name="email" type="text" id="email" placeholder="Email">
+                <textarea name="comments" id="comments" placeholder="Message"></textarea>
+                <input type="submit" class="send_message transition" id="submit" value="Send Message" />
+            </form>*@
+
+            <EditForm Model="_mailInfo" OnValidSubmit="@HandleValidSubmit" id="contact-form">
+                <DataAnnotationsValidator />
+                @*<div class="form-group">*@
+                   
+                  @*  <InputText class="iptxt" id="name" placeholder="Name" data-role="input" @bind-Value="_mailInfo.EmailName" />*@
+                    <input name="name" type="text" id="name" class="inputForm2" placeholder="Name" @bind="@_mailInfo.EmailName">
+                <ValidationMessage For="@(() => _mailInfo.EmailName)" style="text-align: initial;font-size: 14px;" />
+
+
+                @*<InputText class="iptxt" id="email" placeholder="Email" data-role="input" @bind-Value="_mailInfo.EmailFrom" />*@
+                <input name="email" type="text" id="email" placeholder="Email" @bind="@_mailInfo.EmailFrom" class="mtt-2">
+                <ValidationMessage For="@(() => _mailInfo.EmailFrom)" style="text-align: initial;font-size: 14px;" />
+                    
+              
+                  @*  <InputTextArea class="iptxtarea" id="comments" placeholder="Message" data-role="input" @bind-Value="_mailInfo.EmailContent" />*@
+                <textarea name="comments" id="comments" placeholder="Message" class="mtt-2" @bind="@_mailInfo.EmailContent"></textarea>
+                <ValidationMessage For="@(() => _mailInfo.EmailContent)" style="text-align: initial;font-size: 14px;" />
+
+                <div class="mtt-2">
+                    @if (!onSubmitLoading)
+                    {
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="fa fa-paper-plane fa-lg"></i> Send Message
+                        </button>
+                    }
+                    else
+                    {
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">Sending...</div>
+                        </div>
+                    }
+                </div>
+              
+                  
+
+                 
+                  @*  <input name="name" type="text" id="name" class="inputForm2" placeholder="Name">*@
+                    
+               @* </div>*@
+
+              @*  <div class="form-group">
+                    <div class="progress-color" data-role="progress" data-type="line" data-small="true"></div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                    </div>
+                    @if (!onSubmitLoading)
+                    {
+                        <button type="submit" class="button secondary outline w-100" @onclick="Clicked"> Enviar</button>
+                    }
+                    else
+                    {
+                        <div class="progress-color" data-role="progress" data-type="line" data-small="true"></div>
+                    }
+                </div>*@
+            </EditForm>
+
+        </div>
+
+    </div>
+</div>
+
+@code {
+
+    private MailViewModel _mailInfo = new();
+
+    private bool onSubmitLoading = false;
+
+   
+
+    //private void Clicked()
+    //{
+        
+    //}
+}
